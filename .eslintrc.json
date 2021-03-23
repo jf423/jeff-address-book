@@ -1,0 +1,55 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest/globals": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:jsx-a11y/recommended",
+        "plugin:react-hooks/recommended",
+        "airbnb"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "jest"
+    ],
+    "rules": {
+        "import/extensions": 0,
+        "import/prefer-default-export": 0,
+        "indent": ["error", 4],
+        "consistent-return": 0,
+        "comma-dangle": [ 2, "never" ],
+        "arrow-parens": [ 2, "as-needed" ],
+        "no-underscore-dangle": 0,
+        "import/no-extraneous-dependencies": 0,
+        "max-len": [2, { "code": 150 }],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": 0,
+        "react/jsx-wrap-multilines": 0,
+        "react/forbid-prop-types": 0,
+        "react/jsx-props-no-spreading": 0,
+        "import/no-named-as-default": 0,
+        "react/react-in-jsx-scope": "off",
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
+    },
+    "globals": {
+        "React": "writable"
+    }
+}
