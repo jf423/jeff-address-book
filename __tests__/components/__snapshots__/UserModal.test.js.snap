@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserModal component test should display as expected 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body
+    style="padding-right: 0px; overflow: hidden;"
+  >
+    <div
+      aria-hidden="true"
+    />
+    <div
+      aria-labelledby="Mario Sanchez"
+      class="UserModal__Container-nbddo3-5 khyklO"
+      data-selector-id="USER_MODAL_CONTAINER"
+      role="presentation"
+      style="position: fixed; z-index: 1300; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+    >
+      <div
+        aria-hidden="true"
+        style="z-index: -1; position: fixed; right: 0px; bottom: 0px; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.5);"
+      />
+      <div
+        data-test="sentinelStart"
+        tabindex="0"
+      />
+      <div
+        class="UserModal__ModalContent-nbddo3-6 geQXQP"
+        tabindex="-1"
+      >
+        <button
+          aria-label="close modal"
+          class="MuiButtonBase-root MuiIconButton-root UserModal__CloseModalButton-nbddo3-4"
+          data-selector-id="USER_MODAL_CLOSE_BUTTON"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <img
+          class="UserModal__Avatar-nbddo3-0 kvxjCD"
+          data-selector-id="USER_MODAL_AVATAR"
+          src="https://randomuser.me/api/portraits/men/29.jpg"
+        />
+        <h2
+          class="UserModal__Name-nbddo3-1 jajtsx"
+          data-selector-id="USER_MODAL_NAME"
+        >
+          Mario Sanchez
+        </h2>
+        <div
+          class="UserModal__Info-nbddo3-2 eZbDxY"
+        >
+          <span
+            class="UserModal__Text-nbddo3-3 fkZDZk"
+            data-selector-id="USER_MODAL_STREET"
+          >
+            Street: 9153 Paseo de Zorrilla
+          </span>
+          <span
+            class="UserModal__Text-nbddo3-3 fkZDZk"
+            data-selector-id="USER_MODAL_CITY"
+          >
+            City: Zaragoza
+          </span>
+          <span
+            class="UserModal__Text-nbddo3-3 fkZDZk"
+            data-selector-id="USER_MODAL_STATE"
+          >
+            State: País Vasco
+          </span>
+          <span
+            class="UserModal__Text-nbddo3-3 fkZDZk"
+            data-selector-id="USER_MODAL_POSTCODE"
+          >
+            Postcode: 38460
+          </span>
+          <span
+            class="UserModal__Text-nbddo3-3 fkZDZk"
+            data-selector-id="USER_MODAL_PHONE"
+          >
+            Phone: 966-530-154
+          </span>
+          <span
+            class="UserModal__Text-nbddo3-3 fkZDZk"
+            data-selector-id="USER_MODAL_CELL"
+          >
+            Cell: 618-277-571
+          </span>
+        </div>
+      </div>
+      <div
+        data-test="sentinelEnd"
+        tabindex="0"
+      />
+    </div>
+  </body>,
+  "container": <div
+    aria-hidden="true"
+  />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
