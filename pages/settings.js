@@ -1,26 +1,26 @@
 import Head from 'next/head';
 import styled from 'styled-components';
 
-import Users from '../src/components/Users.js';
+import Nationalities from '../src/components/Nationalities.js';
 
 import { flexRowCenterCenter } from '../src/style/flex.css.js';
 
-import { INDEX_PAGE } from '../src/config/selectors.json';
+import { SETTINGS_PAGE } from '../src/config/selectors.json';
 
-export default function App() {
+export default function Settings() {
     return (
-        <AppContainer data-selector-id={INDEX_PAGE.INDEX_CONTAINER.ID}>
+        <SettingsContainer data-selector-id={SETTINGS_PAGE.SETTINGS_CONTAINER.ID}>
             <Head>
-                <title>Address Book App</title>
+                <title>Settings</title>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Users />
-        </AppContainer>
+            <Nationalities />
+        </SettingsContainer>
     );
 }
 
-export const AppContainer = styled.div`
+const SettingsContainer = styled.div`
     width: 100vw;
     height: 100vh;
     ${flexRowCenterCenter};
