@@ -1,0 +1,237 @@
+{
+    "INDEX_PAGE": {
+        "INDEX_CONTAINER": {
+            "ID": "INDEX_CONTAINER",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='INDEX_CONTAINER']",
+            "EX": "[data-selector-id='INDEX_CONTAINER']",
+            "PARAM": ""
+        },
+        "SEARCH_CONTAINER": {
+            "ID": "SEARCH_CONTAINER",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='SEARCH_CONTAINER']",
+            "EX": "[data-selector-id='SEARCH_CONTAINER']",
+            "PARAM": ""
+        },
+        "SEARCH_INPUT": {
+            "ID": "SEARCH_INPUT",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='SEARCH_INPUT']",
+            "EX": "[data-selector-id='SEARCH_INPUT']",
+            "PARAM": ""
+        },
+        "SEARCH_CLEAR": {
+            "ID": "SEARCH_CLEAR",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='SEARCH_CLEAR']",
+            "EX": "[data-selector-id='SEARCH_CLEAR']",
+            "PARAM": ""
+        },
+        "SEARCH_BUTTON": {
+            "ID": "SEARCH_BUTTON",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='SEARCH_BUTTON']",
+            "EX": "[data-selector-id='SEARCH_BUTTON']",
+            "PARAM": ""
+        },
+        "USER_CONTAINER": {
+            "ID": "USER_CONTAINER",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_CONTAINER']",
+            "EX": "[data-selector-id='USER_CONTAINER']",
+            "PARAM": ""
+        },
+        "USER_CONTENT": {
+            "ID": "USER_CONTENT",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_CONTENT']",
+            "EX": "[data-selector-id='USER_CONTENT']",
+            "PARAM": ""
+        },
+        "USER_CATALOG_END": {
+            "ID": "USER_CATALOG_END",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_CATALOG_END']",
+            "EX": "[data-selector-id='USER_CATALOG_END']",
+            "PARAM": ""
+        },
+        "USER_CELL_CONTAINER": {
+            "ID": "USER_CELL_CONTAINER",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_CELL_CONTAINER_{INDEX}']",
+            "EX": "[data-selector-id='USER_CELL_CONTAINER_1']",
+            "PARAM": ""
+        },
+        "USER_CELL_CONTENT": {
+            "ID": "USER_CELL_CONTENT",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_CELL_CONTAINER_{INDEX}'] [data-selector-id='USER_CELL_CONTENT']",
+            "EX": "[data-selector-id='USER_CELL_CONTAINER_1'] [data-selector-id='USER_CELL_CONTENT']",
+            "PARAM": ""
+        },
+        "USER_CELL_AVATAR": {
+            "ID": "USER_CELL_AVATAR",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_CELL_CONTAINER_{INDEX}'] [data-selector-id='USER_CELL_AVATAR']",
+            "EX": "[data-selector-id='USER_CELL_CONTAINER_1'] [data-selector-id='USER_CELL_AVATAR']",
+            "PARAM": ""
+        },
+        "USER_CELL_NAME": {
+            "ID": "USER_CELL_NAME",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_CELL_CONTAINER_{INDEX}'] [data-selector-id='USER_CELL_NAME']",
+            "EX": "[data-selector-id='USER_CELL_CONTAINER_1'] [data-selector-id='USER_CELL_NAME']",
+            "PARAM": ""
+        },
+        "USER_CELL_NATIONALITY": {
+            "ID": "USER_CELL_NATIONALITY",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_CELL_CONTAINER_{INDEX}'] [data-selector-id='USER_CELL_NATIONALITY']",
+            "EX": "[data-selector-id='USER_CELL_CONTAINER_1'] [data-selector-id='USER_CELL_NATIONALITY']",
+            "PARAM": ""
+        },
+        "USER_CELL_USERNAME": {
+            "ID": "USER_CELL_USERNAME",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_CELL_CONTAINER_{INDEX}'] [data-selector-id='USER_CELL_USERNAME']",
+            "EX": "[data-selector-id='USER_CELL_CONTAINER_1'] [data-selector-id='USER_CELL_USERNAME']",
+            "PARAM": ""
+        },
+        "USER_CELL_EMAIL": {
+            "ID": "USER_CELL_EMAIL",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_CELL_CONTAINER_{INDEX}'] [data-selector-id='USER_CELL_EMAIL']",
+            "EX": "[data-selector-id='USER_CELL_CONTAINER_1'] [data-selector-id='USER_CELL_EMAIL']",
+            "PARAM": ""
+        },
+        "USER_MODAL_CONTAINER": {
+            "ID": "USER_MODAL_CONTAINER",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_MODAL_CONTAINER']",
+            "EX": "[data-selector-id='USER_MODAL_CONTAINER']",
+            "PARAM": ""
+        },
+        "USER_MODAL_CLOSE_BUTTON": {
+            "ID": "USER_MODAL_CLOSE_BUTTON",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_MODAL_CLOSE_BUTTON']",
+            "EX": "[data-selector-id='USER_MODAL_CLOSE_BUTTON']",
+            "PARAM": ""
+        },
+        "USER_MODAL_AVATAR": {
+            "ID": "USER_MODAL_AVATAR",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_MODAL_AVATAR']",
+            "EX": "[data-selector-id='USER_MODAL_AVATAR']",
+            "PARAM": ""
+        },
+        "USER_MODAL_NAME": {
+            "ID": "USER_MODAL_NAME",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_MODAL_NAME']",
+            "EX": "[data-selector-id='USER_MODAL_NAME']",
+            "PARAM": ""
+        },
+        "USER_MODAL_STREET": {
+            "ID": "USER_MODAL_STREET",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_MODAL_STREET']",
+            "EX": "[data-selector-id='USER_MODAL_STREET']",
+            "PARAM": ""
+        },
+        "USER_MODAL_CITY": {
+            "ID": "USER_MODAL_CITY",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_MODAL_CITY']",
+            "EX": "[data-selector-id='USER_MODAL_CITY']",
+            "PARAM": ""
+        },
+        "USER_MODAL_STATE": {
+            "ID": "USER_MODAL_STATE",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_MODAL_STATE']",
+            "EX": "[data-selector-id='USER_MODAL_STATE']",
+            "PARAM": ""
+        },
+        "USER_MODAL_POSTCODE": {
+            "ID": "USER_MODAL_POSTCODE",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_MODAL_POSTCODE']",
+            "EX": "[data-selector-id='USER_MODAL_POSTCODE']",
+            "PARAM": ""
+        },
+        "USER_MODAL_PHONE": {
+            "ID": "USER_MODAL_PHONE",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_MODAL_PHONE']",
+            "EX": "[data-selector-id='USER_MODAL_PHONE']",
+            "PARAM": ""
+        },
+        "USER_MODAL_CELL": {
+            "ID": "USER_MODAL_CELL",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='USER_MODAL_CELL']",
+            "EX": "[data-selector-id='USER_MODAL_CELL']",
+            "PARAM": ""
+        }
+    },
+    "SETTINGS_PAGE": {
+        "SETTINGS_CONTAINER": {
+            "ID": "SETTINGS_CONTAINER",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='SETTINGS_CONTAINER']",
+            "EX": "[data-selector-id='SETTINGS_CONTAINER']",
+            "PARAM": ""
+        },
+        "NATIONALITIES_CONTAINER": {
+            "ID": "NATIONALITIES_CONTAINER",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='NATIONALITIES_CONTAINER']",
+            "EX": "[data-selector-id='NATIONALITIES_CONTAINER']",
+            "PARAM": ""
+        },
+        "NATIONALITIES_BACK_BUTTON": {
+            "ID": "NATIONALITIES_BACK_BUTTON",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='NATIONALITIES_BACK_BUTTON']",
+            "EX": "[data-selector-id='NATIONALITIES_BACK_BUTTON']",
+            "PARAM": ""
+        },
+        "NATIONALITIES_CHECKBOX_CH": {
+            "ID": "NATIONALITIES_CHECKBOX_CH",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='NATIONALITIES_CHECKBOX_CH']",
+            "EX": "[data-selector-id='NATIONALITIES_CHECKBOX_CH']",
+            "PARAM": ""
+        },
+        "NATIONALITIES_CHECKBOX_ES": {
+            "ID": "NATIONALITIES_CHECKBOX_ES",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='NATIONALITIES_CHECKBOX_ES']",
+            "EX": "[data-selector-id='NATIONALITIES_CHECKBOX_ES']",
+            "PARAM": ""
+        },
+        "NATIONALITIES_CHECKBOX_FR": {
+            "ID": "NATIONALITIES_CHECKBOX_FR",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='NATIONALITIES_CHECKBOX_FR']",
+            "EX": "[data-selector-id='NATIONALITIES_CHECKBOX_FR']",
+            "PARAM": ""
+        },
+        "NATIONALITIES_CHECKBOX_GB": {
+            "ID": "NATIONALITIES_CHECKBOX_GB",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='NATIONALITIES_CHECKBOX_GB']",
+            "EX": "[data-selector-id='NATIONALITIES_CHECKBOX_GB']",
+            "PARAM": ""
+        },
+        "NATIONALITIES_SAVE_BUTTON": {
+            "ID": "NATIONALITIES_SAVE_BUTTON",
+            "TYPE": "css",
+            "VAL": "[data-selector-id='NATIONALITIES_SAVE_BUTTON']",
+            "EX": "[data-selector-id='NATIONALITIES_SAVE_BUTTON']",
+            "PARAM": ""
+        }
+    }
+}
