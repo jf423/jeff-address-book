@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -38,9 +38,10 @@ export default function Search({ className }) {
 
         setText(event.target.value);
     };
-    const onClear = () => {
+    const onClear = useCallback(() => {
         setText('');
-    };
+        dispatch(setSearchTextAction(''));
+    }, [dispatch]);
     const onKeyDown = event => {
         if (event && event.keyCode === 13) {
             onSearch();
