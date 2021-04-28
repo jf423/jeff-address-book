@@ -8,17 +8,19 @@ import styled from 'styled-components';
 import { IconButton, Snackbar } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
 
+import { flexColStartCenter } from '@/style/flex.css.js';
+
+import { updateUserDataAction } from '@/ducks/modules/users.js';
+import { USERS_CONFIG, END_POINT } from '@/config/user.js';
+import { INDEX_PAGE } from '@/config/selectors.json';
+
+import useColumnCount from '@/hooks/useColumnCount.js';
+
+import { getFilterUser } from '@/utils/users.js';
+
 import Search from './Search‌.js';
 import UserModal from './UserModal.js';
 import UserCell from './UserCell.js';
-
-import { flexColStartCenter } from '../style/flex.css.js';
-
-import { updateUserDataAction } from '../ducks/modules/users.js';
-import { USERS_CONFIG, END_POINT } from '../config/user.js';
-import { INDEX_PAGE } from '../config/selectors.json';
-
-import { getFilterUser } from '../utils/users.js';
 
 const {
     NUM_COLUMNS,

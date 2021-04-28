@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import { IconButton, Modal } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
 
-import { flexRowCenterCenter, flexColCenterCenter } from '../style/flex.css.js';
-import { eclipse, shadow } from '../style/common.css.js';
+import { flexRowCenterCenter, flexColCenterCenter } from '@/style/flex.css.js';
+import { eclipse, shadow } from '@/style/common.css.js';
 
-import { INDEX_PAGE } from '../config/selectors.json';
+import { INDEX_PAGE } from '@/config/selectors.json';
 
 const {
     USER_MODAL_CONTAINER,

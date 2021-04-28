@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { flexRowCenterCenter, flexColCenterCenter } from '../style/flex.css.js';
-import { eclipse, shadow } from '../style/common.css.js';
+import { flexRowCenterCenter, flexColCenterCenter } from '@/style/flex.css.js';
+import { eclipse, shadow } from '@/style/common.css.js';
 
-import { USERS_CONFIG } from '../config/user.js';
-import { INDEX_PAGE } from '../config/selectors.json';
+import { INDEX_PAGE } from '@/config/selectors.json';
 
 const { NUM_COLUMNS } = USERS_CONFIG;
 const {

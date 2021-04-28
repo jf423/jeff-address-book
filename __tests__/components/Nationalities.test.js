@@ -3,12 +3,12 @@ import { Provider } from 'react-redux';
 import { render, fireEvent } from '@testing-library/react';
 import { toBeInTheDocument, toBeChecked } from '@testing-library/jest-dom/matchers';
 
-import { initStore } from '../../src/ducks/store.js';
-import { updateNationalitiesAction } from '../../src/ducks/modules/users.js';
+import { initStore } from '@/ducks/store.js';
+import { updateNationalitiesAction } from '@/ducks/modules/users.js';
 
-import { SETTINGS_PAGE } from '../../src/config/selectors.json';
+import { SETTINGS_PAGE } from '@/config/selectors.json';
 
-import Nationalities from '../../src/components/Nationalities.js';
+import Nationalities from '@/components/Nationalities.js';
 
 expect.extend({ toBeInTheDocument, toBeChecked });
 

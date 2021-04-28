@@ -1,6 +1,6 @@
 import { createAction } from 'redux-actions';
 
-import { DEFAULT_NATIONALITIES } from '../../config/user.js';
+import { DEFAULT_NATIONALITIES } from '@/config/user.js';
 
 export const initialState = {
     userData: [],

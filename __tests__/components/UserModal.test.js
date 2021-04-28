@@ -2,9 +2,9 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { toBeInTheDocument, toHaveTextContent, toHaveValue } from '@testing-library/jest-dom/matchers';
 
-import { INDEX_PAGE } from '../../src/config/selectors.json';
+import { INDEX_PAGE } from '@/config/selectors.json';
 
-import UserModal from '../../src/components/UserModal.js';
+import UserModal from '@/components/UserModal.js';
 
 import DATA from '../mockUsersData.json';
 

@@ -2,10 +2,10 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { toBeInTheDocument, toHaveTextContent, toHaveValue } from '@testing-library/jest-dom/matchers';
 
-import { USERS_CONFIG } from '../../src/config/user.js';
-import { INDEX_PAGE } from '../../src/config/selectors.json';
+import { USERS_CONFIG } from '@/config/user.js';
+import { INDEX_PAGE } from '@/config/selectors.json';
 
-import UserCell from '../../src/components/UserCell.js';
+import UserCell from '@/components/UserCell.js';
 
 import DATA from '../mockUsersData.json';
 

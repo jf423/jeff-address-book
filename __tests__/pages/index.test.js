@@ -3,9 +3,9 @@ import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 import { toBeInTheDocument } from '@testing-library/jest-dom/matchers';
 
-import { initStore } from '../../src/ducks/store.js';
+import { initStore } from '@/ducks/store.js';
 
-import { INDEX_PAGE } from '../../src/config/selectors.json';
+import { INDEX_PAGE } from '@/config/selectors.json';
 
 import App from '../../pages/index.js';
 

@@ -3,12 +3,12 @@ import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 import { toBeInTheDocument, toHaveTextContent, toHaveValue } from '@testing-library/jest-dom/matchers';
 
-import { initStore } from '../../src/ducks/store.js';
+import { initStore } from '@/ducks/store.js';
 
-import { INDEX_PAGE } from '../../src/config/selectors.json';
-import { DEFAULT_NATIONALITIES } from '../../src/config/user.js';
+import { INDEX_PAGE } from '@/config/selectors.json';
+import { DEFAULT_NATIONALITIES } from '@/config/user.js';
 
-import Users from '../../src/components/Users.js';
+import Users from '@/components/Users.js';
 
 import DATA from '../mockUsersData.json';
 

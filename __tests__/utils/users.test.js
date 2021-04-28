@@ -1,6 +1,6 @@
-import { getFilterUser } from '../../src/utils/users.js';
+import { getFilterUser } from '@/utils/users.js';
 
-import { DEFAULT_NATIONALITIES } from '../../src/config/user.js';
+import { DEFAULT_NATIONALITIES } from '@/config/user.js';
 
 import DATA from '../mockUsersData.json';
 

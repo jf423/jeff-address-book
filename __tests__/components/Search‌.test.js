@@ -3,12 +3,12 @@ import { Provider } from 'react-redux';
 import { render, fireEvent } from '@testing-library/react';
 import { toBeInTheDocument, toHaveValue } from '@testing-library/jest-dom/matchers';
 
-import { initStore } from '../../src/ducks/store.js';
-import { setSearchTextAction } from '../../src/ducks/modules/users.js';
+import { initStore } from '@/ducks/store.js';
+import { setSearchTextAction } from '@/ducks/modules/users.js';
 
-import { INDEX_PAGE } from '../../src/config/selectors.json';
+import { INDEX_PAGE } from '@/config/selectors.json';
 
-import Search from '../../src/components/Search‌.js';
+import Search from '@/components/Search‌.js';
 
 expect.extend({ toBeInTheDocument, toHaveValue });
 

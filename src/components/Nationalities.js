@@ -12,11 +12,12 @@ import {
 } from '@material-ui/core';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-import { shadow } from '../style/common.css.js';
-import { flexColStartCenter, flexRowStartCenter } from '../style/flex.css.js';
+import { shadow } from '@/style/common.css.js';
+import { flexColStartCenter, flexRowStartCenter } from '@/style/flex.css.js';
 
-import { updateNationalitiesAction } from '../ducks/modules/users.js';
-import { SETTINGS_PAGE } from '../config/selectors.json';
+import { updateNationalitiesAction } from '@/ducks/modules/users.js';
+import { DEFAULT_NATIONALITIES_DATA } from '@/config/user.js';
+import { SETTINGS_PAGE } from '@/config/selectors.json';
 
 const {
     NATIONALITIES_CONTAINER,

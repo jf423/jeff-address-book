@@ -3,7 +3,7 @@ import reducer, {
     UPDATE_USER_DATA,
     UPDATE_NATIONALITIES,
     SET_SEARCH_TEXT
-} from '../../src/ducks/modules/users.js';
+} from '@/ducks/modules/users.js';
 
 describe('users redux test', () => {
     describe('state test', () => {

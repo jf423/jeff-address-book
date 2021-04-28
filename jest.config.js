@@ -8,9 +8,9 @@ module.exports = {
     setupFiles: [
         './__tests__/setupJest.js'
     ],
-    modulePaths: [
-        './src'
-    ],
+    moduleNameMapper: {
+        '^@/(.*)$': '<rootDir>/src/$1'
+    },
     testMatch: [
         '<rootDir>/__tests__/**/*.+(js)?(x)',
         '<rootDir>/src/**/?(*.)(spec|test).+(js)?(x)'

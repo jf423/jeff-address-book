@@ -13,11 +13,11 @@ import {
     Close as CloseIcon
 } from '@material-ui/icons';
 
-import { shadow } from '../style/common.css.js';
-import { flexRowStartCenter } from '../style/flex.css.js';
+import { shadow } from '@/style/common.css.js';
+import { flexRowStartCenter } from '@/style/flex.css.js';
 
-import { setSearchTextAction } from '../ducks/modules/users.js';
-import { INDEX_PAGE } from '../config/selectors.json';
+import { setSearchTextAction } from '@/ducks/modules/users.js';
+import { INDEX_PAGE } from '@/config/selectors.json';
 
 const {
     SEARCH_CONTAINER,
