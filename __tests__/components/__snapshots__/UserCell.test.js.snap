@@ -17,6 +17,7 @@ Object {
             class="UserCell__Avatar-sc-1lznl0l-2 trjPI"
             data-selector-id="USER_CELL_AVATAR"
             src="https://randomuser.me/api/portraits/thumb/men/29.jpg"
+            srcset="https://randomuser.me/api/portraits/med/men/29.jpg 1x, https://randomuser.me/api/portraits/men/29.jpg 2x"
           />
           <h2
             class="UserCell__Name-sc-1lznl0l-3 EBjpy"
@@ -63,6 +64,7 @@ Object {
           class="UserCell__Avatar-sc-1lznl0l-2 trjPI"
           data-selector-id="USER_CELL_AVATAR"
           src="https://randomuser.me/api/portraits/thumb/men/29.jpg"
+          srcset="https://randomuser.me/api/portraits/med/men/29.jpg 1x, https://randomuser.me/api/portraits/men/29.jpg 2x"
         />
         <h2
           class="UserCell__Name-sc-1lznl0l-3 EBjpy"

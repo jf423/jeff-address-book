@@ -11,15 +11,6 @@ import DATA from '../mockUsersData.json';
 
 expect.extend({ toBeInTheDocument, toHaveTextContent, toHaveValue });
 
-const mockData = {
-    data: {
-        items: DATA.results,
-        setSelectedIndex: jest.fn()
-    },
-    columnIndex: 0,
-    rowIndex: 0,
-    style: {}
-};
 const { NUM_COLUMNS } = USERS_CONFIG;
 const {
     USER_CELL_CONTAINER,
@@ -30,6 +21,17 @@ const {
     USER_CELL_USERNAME,
     USER_CELL_EMAIL
 } = INDEX_PAGE;
+
+const mockData = {
+    data: {
+        items: DATA.results,
+        columnCount: NUM_COLUMNS,
+        setSelectedIndex: jest.fn()
+    },
+    columnIndex: 0,
+    rowIndex: 0,
+    style: {}
+};
 
 describe('UserCell component test', () => {
     let userCell;
@@ -47,8 +49,11 @@ describe('UserCell component test', () => {
 
     test('should display as expected', () => {
         const itemIndex = mockData.rowIndex * NUM_COLUMNS + mockData.columnIndex;
+        console.log('userCell', userCell)
+        console.log('userCellContainer', `${USER_CELL_CONTAINER.ID}_${itemIndex}`)
         const item = DATA.results[itemIndex];
         const userCellContainer = userCell.container.querySelector(`[data-selector-id="${USER_CELL_CONTAINER.ID}_${itemIndex}"]`);
+        // console.log('userCellContainer', userCellContainer)
         const userCellContent = userCellContainer.querySelector(`[data-selector-id="${USER_CELL_CONTENT.ID}"]`);
         const userCellAvatar = userCellContainer.querySelector(`[data-selector-id="${USER_CELL_AVATAR.ID}"]`);
         const userCellName = userCellContainer.querySelector(`[data-selector-id="${USER_CELL_NAME.ID}"]`);

@@ -41,3 +41,9 @@ export const DEFAULT_NATIONALITIES_DATA = [
         label: 'United Kingdom (GB)'
     }
 ];
+
+export const MEDIA_QUERY_LIST = {
+    MOBILE_WIDTH: '(max-width: 780px)',
+    TABLET_WIDTH: '(min-width: 780px) and (max-width: 1000px)',
+    DESKTOP_WIDTH: '(min-width: 1000px)'
+};

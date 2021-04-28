@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { FixedSizeGrid as Grid } from 'react-window';
 import InfiniteLoader from 'react-window-infinite-loader';
@@ -35,28 +35,29 @@ const {
     USER_CATALOG_END
 } = INDEX_PAGE;
 
-const LOADING_COLUMNS = new Array(NUM_COLUMNS).fill({});
-
 const Users = () => {
     const dispatch = useDispatch();
-    const { searchText, nationalities } = useSelector(state => state);
-    const userData = useSelector(state => getFilterUser(state.userData, nationalities, searchText));
+    const { searchText, nationalities, userData } = useSelector(state => state);
+    const users = useMemo(() => getFilterUser(userData, nationalities, searchText), [userData, nationalities, searchText]);
     const [selectedIndex, setSelectedIndex] = useState(null);
     const [isScrollToEnd, setScrollToEnd] = useState(false);
     const [isDisableSnackbar, setDisableSnackbar] = useState(false);
-    const userCount = userData.length;
-    const items = (userCount < MAXIMUM_COUNT && !searchText) ? userData.concat(LOADING_COLUMNS) : userData;
+    const [columnCount] = useColumnCount(NUM_COLUMNS);
 
-    const onCloseSnackbar = () => {
+    const userCount = users.length;
+    const loadingColumn = new Array(columnCount).fill({});
+    const items = (userCount < MAXIMUM_COUNT && !searchText) ? users.concat(loadingColumn) : users;
+
+    const onCloseSnackbar = useCallback(() => {
         setDisableSnackbar(true);
-    };
+    }, []);
     const onLoadMore = () => {
         if (searchText) return;
 
         return fetch(`${END_POINT}?results=${BATCH_NUM}&nat=${nationalities.join()}`)
             .then(res => res.json())
             .then(({ results }) => {
-                dispatch(updateUserDataAction(userData.concat(results)));
+                dispatch(updateUserDataAction(users.concat(results)));
             });
     };
     const isItemLoaded = index => {
@@ -67,7 +68,7 @@ const Users = () => {
     };
 
     return (
-        <Container data-selector-id={USER_CONTAINER.ID}>
+        <Container width={ITEM_WIDTH * columnCount} data-selector-id={USER_CONTAINER.ID}>
             <SearchHeader />
             <UsersContent data-selector-id={USER_CONTENT.ID}>
                 <AutoSizer>
@@ -84,14 +85,14 @@ const Users = () => {
                                     height={height}
                                     columnWidth={ITEM_WIDTH}
                                     rowHeight={ITEM_HEIGHT}
-                                    columnCount={NUM_COLUMNS}
-                                    rowCount={Math.ceil(items.length / NUM_COLUMNS)}
-                                    itemData={{ items, setSelectedIndex }}
+                                    columnCount={columnCount}
+                                    rowCount={Math.ceil(items.length / columnCount)}
+                                    itemData={{ items, columnCount, setSelectedIndex }}
                                     onItemsRendered={gridProps => onItemsRendered({
-                                        overscanStartIndex: gridProps.overscanRowStartIndex * NUM_COLUMNS,
-                                        overscanStopIndex: gridProps.overscanRowStopIndex * NUM_COLUMNS,
-                                        visibleStartIndex: gridProps.visibleRowStartIndex * NUM_COLUMNS,
-                                        visibleStopIndex: gridProps.visibleRowStopIndex * NUM_COLUMNS
+                                        overscanStartIndex: gridProps.overscanRowStartIndex * columnCount,
+                                        overscanStopIndex: gridProps.overscanRowStopIndex * columnCount,
+                                        visibleStartIndex: gridProps.visibleRowStartIndex * columnCount,
+                                        visibleStopIndex: gridProps.visibleRowStopIndex * columnCount
                                     })}
                                 >
                                     {UserCell}
@@ -101,7 +102,7 @@ const Users = () => {
                     )}
                 </AutoSizer>
             </UsersContent>
-            <UserModal open={Boolean(userData[selectedIndex])} selectedUser={userData[selectedIndex]} setSelectedIndex={setSelectedIndex} />
+            <UserModal open={Boolean(users[selectedIndex])} selectedUser={users[selectedIndex]} setSelectedIndex={setSelectedIndex} />
             <Snackbar
                 data-selector-id={USER_CATALOG_END.ID}
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
@@ -125,7 +126,7 @@ const Users = () => {
 export default Users;
 
 const Container = styled.div`
-    width: ${ITEM_WIDTH * NUM_COLUMNS}px;
+    width: ${({ width }) => width}px;
     height: 100%;
     ${flexColStartCenter};
 `;
@@ -134,6 +135,10 @@ const SearchHeader = styled(Search)`
     width: 100%;
     height: 40px;
     margin-top: 15px;
+    
+    @media (max-width: 480px) {
+        width: auto;
+    }
 `;
 
 const UsersContent = styled.div`

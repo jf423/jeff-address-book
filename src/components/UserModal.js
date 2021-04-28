@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { useCallback } from 'react';
 
 import { IconButton, Modal } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
@@ -23,9 +24,9 @@ const {
 } = INDEX_PAGE;
 
 const UserModal = ({ open, selectedUser, setSelectedIndex }) => {
-    const onCloseModal = () => {
+    const onCloseModal = useCallback(() => {
         setSelectedIndex(null);
-    };
+    }, [setSelectedIndex]);
 
     return (
         <Container

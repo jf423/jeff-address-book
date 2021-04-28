@@ -6,7 +6,6 @@ import { eclipse, shadow } from '@/style/common.css.js';
 
 import { INDEX_PAGE } from '@/config/selectors.json';
 
-const { NUM_COLUMNS } = USERS_CONFIG;
 const {
     USER_CELL_CONTAINER,
     USER_CELL_CONTENT,
@@ -18,12 +17,12 @@ const {
 } = INDEX_PAGE;
 
 const UserCell = ({
-    data: { items, setSelectedIndex },
+    data: { items, columnCount, setSelectedIndex },
     columnIndex,
     rowIndex,
     style
 }) => {
-    const itemIndex = rowIndex * NUM_COLUMNS + columnIndex;
+    const itemIndex = rowIndex * columnCount + columnIndex;
     const itemData = items[itemIndex];
 
     const onClick = () => {
@@ -36,7 +35,14 @@ const UserCell = ({
     return (
         <Card data-selector-id={`${USER_CELL_CONTAINER.ID}_${itemIndex}`} style={style}>
             <CardContent data-selector-id={USER_CELL_CONTENT.ID} onClick={onClick}>
-                <Avatar data-selector-id={USER_CELL_AVATAR.ID} src={itemData?.picture?.thumbnail} />
+                {!itemData?.picture && <Avatar />}
+                {itemData?.picture &&
+                    <Avatar
+                        data-selector-id={USER_CELL_AVATAR.ID}
+                        src={itemData?.picture?.thumbnail}
+                        srcSet={`${itemData?.picture?.medium} 1x, ${itemData?.picture?.large} 2x`}
+                    />
+                }
                 <Name data-selector-id={USER_CELL_NAME.ID}>
                     { itemData.name ? `${itemData?.name?.first} ${itemData?.name?.last}` : 'Loading'}
                 </Name>
@@ -55,6 +61,7 @@ export default UserCell;
 UserCell.propTypes = {
     data: PropTypes.shape({
         items: PropTypes.array.isRequired,
+        columnCount: PropTypes.number.isRequired,
         setSelectedIndex: PropTypes.func.isRequired
     }).isRequired,
     columnIndex: PropTypes.number.isRequired,

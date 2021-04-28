@@ -10,11 +10,12 @@ Object {
         data-selector-id="INDEX_CONTAINER"
       >
         <div
-          class="Users__Container-sc-15n28nk-0 fScasL"
+          class="Users__Container-sc-15n28nk-0 izifiP"
           data-selector-id="USER_CONTAINER"
+          width="720"
         >
           <div
-            class="Search__Container-sc-1j9mi1x-0 cWJnpy Users__SearchHeader-sc-15n28nk-1 gQMvCT"
+            class="Search__Container-sc-1j9mi1x-0 cWJnpy Users__SearchHeader-sc-15n28nk-1 dRoNoV"
             data-selector-id="SEARCH_CONTAINER"
           >
             <div
@@ -141,11 +142,12 @@ Object {
       data-selector-id="INDEX_CONTAINER"
     >
       <div
-        class="Users__Container-sc-15n28nk-0 fScasL"
+        class="Users__Container-sc-15n28nk-0 izifiP"
         data-selector-id="USER_CONTAINER"
+        width="720"
       >
         <div
-          class="Search__Container-sc-1j9mi1x-0 cWJnpy Users__SearchHeader-sc-15n28nk-1 gQMvCT"
+          class="Search__Container-sc-1j9mi1x-0 cWJnpy Users__SearchHeader-sc-15n28nk-1 dRoNoV"
           data-selector-id="SEARCH_CONTAINER"
         >
           <div
